@@ -1,37 +1,60 @@
-/* line 9, ../sass/style.scss */
-#logo {
+/* line 8, ../sass/style.scss */
+#sidebar {
   position: fixed;
-  top: 15%;
-  right: 20px;
-  margin-left: -50px;
-  margin-top: -50px;
-  width: 300px;
+  top: 20%;
+  right: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  width: 400px;
+  background: #ffcc00;
+  -webkit-transform: translateZ(1000px);
+  -moz-transform: translateZ(1000px);
+  -ms-transform: translateZ(1000px);
+  -o-transform: translateZ(1000px);
+  transform: translateZ(1000px);
+  z-index: 9999;
 }
-/* line 16, ../sass/style.scss */
-#logo h2 {
-  background-color: rgba(255, 255, 255, 0.7);
+/* line 24, ../sass/style.scss */
+#sidebar .logo h2 {
   padding: 10px;
 }
-/* line 21, ../sass/style.scss */
-#logo p {
+/* line 28, ../sass/style.scss */
+#sidebar .logo p {
   margin-top: 5px;
-  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+}
+/* line 33, ../sass/style.scss */
+#sidebar .signin {
   padding: 10px;
 }
 
-/* line 27, ../sass/style.scss */
-#signin {
-  position: fixed;
-  top: 40%;
-  right: 20px;
-  margin-left: -50px;
-  margin-top: -50px;
-  width: 300px;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 10px;
+/* line 37, ../sass/style.scss */
+.slide {
+  display: block;
+  width: 900px;
+  height: 700px;
+  padding: 40px 60px;
+  background-color: white;
+  color: #666666;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -1px;
+}
+/* line 54, ../sass/style.scss */
+.slide p {
+  display: block;
+  font-size: 50px;
+  line-height: 72px;
+  margin-top: 100px;
+}
+/* line 62, ../sass/style.scss */
+.slide p strong {
+  white-space: nowrap;
 }
 
-/* line 38, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 .comic-panel {
   height: 900px;
   text-transform: uppercase;
@@ -44,32 +67,62 @@
   margin-right: 10px;
 }
 
-/* line 50, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
+.page {
+  max-width: 1024px;
+}
+
+/* line 84, ../sass/style.scss */
+.impress-enabled .step {
+  margin: 0;
+  opacity: 0.3;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+/* line 93, ../sass/style.scss */
+.impress-enabled .step.active {
+  opacity: 1;
+}
+
+/* line 99, ../sass/style.scss */
 .panel1 {
   background-image: url("../images/panel1.jpg");
 }
 
-/* line 54, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 .panel2 {
   background-image: url("../images/panel2.jpg");
 }
 
-/* line 58, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 .panel3 {
   background-image: url("../images/panel3.jpg");
 }
 
-/* line 62, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 .panel4 {
   background-image: url("../images/panel4.jpg");
 }
 
-/* line 66, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 .panel5 {
   background-image: url("../images/panel5.jpg");
 }
 
-/* line 70, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 .panel6 {
   background-image: url("../images/panel6.jpg");
+}
+
+/* line 123, ../sass/style.scss */
+.fallback-message p {
+  margin-bottom: 10px;
+}
+
+/* line 126, ../sass/style.scss */
+.impress-supported .fallback-message {
+  display: none;
 }

@@ -5,34 +5,63 @@ $cream: #FAE8CD;
 $blue: #128085;
 $dark: #385052;
 $yellow: #F0AD44;
+#sidebar{
+  position:fixed;
+  top:20%;
+  right:0px;
+  margin-left:0px;
+  margin-top:0px;
+  width:400px;
+  background: #ffcc00;
+  -webkit-transform: translateZ(1000px);
+  -moz-transform:    translateZ(1000px);
+  -ms-transform:     translateZ(1000px);
+  -o-transform:      translateZ(1000px);
+  transform:         translateZ(1000px);
+  z-index: 9999;
+  .logo{
 
-#logo{
-	position:fixed;
-	top:15%;
-	right:20px;
-	margin-left:-50px;
-	margin-top:-50px;
-	width:300px;	
-	h2{
-		background-color: rgba(#ffffff, 0.7);
-		padding:10px;
-	}
+    h2{
+      padding:10px;
+    }
 
-	p{
-		margin-top:5px;
-		background-color: rgba(#ffffff, 0.7);
-		padding:10px;
-	}
+    p{
+      margin-top:5px;
+      padding:10px;
+    }
+  }
+  .signin {
+    padding:10px;
+  }
 }
-#signin {
-	position:fixed;
-	top:40%;
-	right:20px;
-	margin-left:-50px;
-    margin-top:-50px;
-	width:300px;
-	background-color: rgba(#ffffff, 0.8);
-	padding:10px;
+.slide {
+  display: block;
+
+  width: 900px;
+  height: 700px;
+  padding: 40px 60px;
+
+  background-color: white;
+
+  color: rgb(102, 102, 102);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -1px;
+
+  p {
+    display: block;
+    font-size: 50px;
+    line-height: 72px;
+
+    margin-top: 100px;
+  }
+
+  p strong {
+    white-space: nowrap;
+  }
 }
 
 .comic-panel {
@@ -46,6 +75,26 @@ $yellow: #F0AD44;
   background-repeat:no-repeat;
   margin-right: 10px;
 }
+
+.page{
+  max-width: 1024px;
+}
+
+.impress-enabled {
+  .step {
+    margin: 0;
+    opacity: 0.3;
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+  }
+  .step.active {
+    opacity: 1;
+  }
+}
+
 
 .panel1 {
   background-image: url('../images/panel1.jpg'); 
@@ -69,4 +118,11 @@ $yellow: #F0AD44;
 
 .panel6 {
   background-image: url('../images/panel6.jpg'); 
+}
+
+.fallback-message p {
+    margin-bottom: 10px;
+}
+.impress-supported .fallback-message {
+    display: none;
 }

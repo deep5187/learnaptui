@@ -1,0 +1,72 @@
+
+//colors
+$orange: #C74029;
+$cream: #FAE8CD;
+$blue: #128085;
+$dark: #385052;
+$yellow: #F0AD44;
+
+#logo{
+	position:fixed;
+	top:15%;
+	right:20px;
+	margin-left:-50px;
+	margin-top:-50px;
+	width:300px;	
+	h2{
+		background-color: rgba(#ffffff, 0.7);
+		padding:10px;
+	}
+
+	p{
+		margin-top:5px;
+		background-color: rgba(#ffffff, 0.7);
+		padding:10px;
+	}
+}
+#signin {
+	position:fixed;
+	top:40%;
+	right:20px;
+	margin-left:-50px;
+    margin-top:-50px;
+	width:300px;
+	background-color: rgba(#ffffff, 0.8);
+	padding:10px;
+}
+
+.comic-panel {
+  height: 900px;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0,0,0,.5);
+  color: #fff;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  margin-right: 10px;
+}
+
+.panel1 {
+  background-image: url('../images/panel1.jpg'); 
+}
+
+.panel2 {
+  background-image: url('../images/panel2.jpg'); 
+}
+
+.panel3 {
+  background-image: url('../images/panel3.jpg'); 
+}
+
+.panel4 {
+  background-image: url('../images/panel4.jpg'); 
+}
+
+.panel5 {
+  background-image: url('../images/panel5.jpg'); 
+}
+
+.panel6 {
+  background-image: url('../images/panel6.jpg'); 
+}

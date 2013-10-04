@@ -14,29 +14,31 @@
 </head>
 <body class="impress-not-supported">
 <div class="container">
+    <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Learnapt.com</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Log In</a></li>
+        </ul>
+
+    </nav>
+
     <div class="fallback-message">
         <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
         <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
     </div>
-    <div id="sidebar">
-        <div class="logo">
-            <h2>Learnapt.com</h2>
-            <p>Learning should be creative and fun. We make it happen by bring together Art, Pedagogy, Technology.
-        </div>
-
-        <form class="signin">
-            <h2 class="form-signin-heading">Please sign in</h2>
-            <input type="text" class="form-control" placeholder="Email address" autofocus="">
-            <input type="password" class="form-control" placeholder="Password">
-            <label class="checkbox">
-                <input type="checkbox" value="remember-me"> Remember me
-            </label>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-        </form>
-    </div>
     <div id="impress" class="zoomTarget">
         <div id="page1" class="slide step" data-x="-1000" data-y="-2000">
-            <p>Learning is <strong>fun</strong>. Read our sample chapter to know how? </p><p>Press space bar to start reading </p>
+            <p>Learning is <strong>fun</strong>. Read our sample chapter to know how? </p><p>Press <span class="lead spacebar">space bar</span> to start reading </p>
         </div>
 
         <div id="page2" class="step" data-x="-1000" data-y="-1500" data-z="0">

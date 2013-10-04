@@ -1,34 +1,9 @@
-/* line 8, ../sass/style.scss */
-#sidebar {
-  position: fixed;
-  top: 20%;
-  right: 0px;
-  margin-left: 0px;
-  margin-top: 0px;
-  width: 400px;
-  background: #ffcc00;
-  -webkit-transform: translateZ(1000px);
-  -moz-transform: translateZ(1000px);
-  -ms-transform: translateZ(1000px);
-  -o-transform: translateZ(1000px);
-  transform: translateZ(1000px);
-  z-index: 9999;
-}
-/* line 24, ../sass/style.scss */
-#sidebar .logo h2 {
-  padding: 10px;
-}
-/* line 28, ../sass/style.scss */
-#sidebar .logo p {
-  margin-top: 5px;
-  padding: 10px;
-}
-/* line 33, ../sass/style.scss */
-#sidebar .signin {
-  padding: 10px;
+/* line 11, ../sass/style.scss */
+.navbar {
+  background-color: #fff;
 }
 
-/* line 37, ../sass/style.scss */
+/* line 14, ../sass/style.scss */
 .slide {
   display: block;
   width: 900px;
@@ -42,19 +17,22 @@
   line-height: 36px;
   letter-spacing: -1px;
 }
-/* line 54, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 .slide p {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
   display: block;
   font-size: 50px;
   line-height: 72px;
   margin-top: 100px;
 }
-/* line 62, ../sass/style.scss */
+/* line 40, ../sass/style.scss */
 .slide p strong {
   white-space: nowrap;
 }
 
-/* line 67, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 .comic-panel {
   height: 900px;
   text-transform: uppercase;
@@ -67,12 +45,12 @@
   margin-right: 10px;
 }
 
-/* line 79, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 .page {
   max-width: 1024px;
 }
 
-/* line 84, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 .impress-enabled .step {
   margin: 0;
   opacity: 0.3;
@@ -82,47 +60,74 @@
   -o-transition: opacity 1s;
   transition: opacity 1s;
 }
-/* line 93, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 .impress-enabled .step.active {
   opacity: 1;
 }
 
-/* line 99, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 .panel1 {
   background-image: url("../images/panel1.jpg");
 }
 
-/* line 103, ../sass/style.scss */
+/* line 81, ../sass/style.scss */
 .panel2 {
   background-image: url("../images/panel2.jpg");
 }
 
-/* line 107, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 .panel3 {
   background-image: url("../images/panel3.jpg");
 }
 
-/* line 111, ../sass/style.scss */
+/* line 89, ../sass/style.scss */
 .panel4 {
   background-image: url("../images/panel4.jpg");
 }
 
-/* line 115, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 .panel5 {
   background-image: url("../images/panel5.jpg");
 }
 
-/* line 119, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 .panel6 {
   background-image: url("../images/panel6.jpg");
 }
 
-/* line 123, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
+.fallback-message {
+  font-family: sans-serif;
+  line-height: 1.3;
+  width: 780px;
+  padding: 10px 10px 0;
+  margin: 20px auto;
+  border: 1px solid #E4C652;
+  border-radius: 10px;
+  background: #EEDC94;
+}
+/* line 112, ../sass/style.scss */
 .fallback-message p {
   margin-bottom: 10px;
 }
 
-/* line 126, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
 .impress-supported .fallback-message {
   display: none;
+}
+
+/* line 121, ../sass/style.scss */
+.spacebar {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 5px;
+  border: 1px solid #000;
+  margin-top: 100px;
 }

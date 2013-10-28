@@ -8,6 +8,10 @@ $cream: #FAE8CD;
 $blue: #128085;
 $dark: #385052;
 $yellow: #ffd800;
+body {
+  font-family: "adelle-sans";
+}
+
 .navbar {
   background-color: #fff;
 }
@@ -23,7 +27,7 @@ $yellow: #ffd800;
   color: rgb(102, 102, 102);
   text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: "chaparral-pro", Arial, sans-serif;
   font-size: 30px;
   line-height: 36px;
   letter-spacing: -1px;
@@ -118,6 +122,7 @@ $yellow: #ffd800;
 
 .spacebar{
   @include border-radius(5px);
+  font-family: "adelle-sans";
   display: inline-block;
   padding-top:20px;
   padding-left:40px;

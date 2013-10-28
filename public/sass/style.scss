@@ -30,11 +30,9 @@ $yellow: #ffd800;
 
   p {
     @include box-sizing(content-box);
+    font-family: "chaparral-pro";
     display: block;
-    font-size: 50px;
-    line-height: 72px;
-
-    margin-top: 100px;
+    font-size: 30px;
   }
 
   p strong {
@@ -126,5 +124,9 @@ $yellow: #ffd800;
   padding-right:40px;
   padding-bottom:5px;
   border: 1px solid #000;
-  margin-top: 100px;
+}
+
+.tagline{
+  font-family: "bree-serif";
+  font-size: 100px;
 }

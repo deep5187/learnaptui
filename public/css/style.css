@@ -1,14 +1,9 @@
-/* line 11, ../sass/style.scss */
+/* line 30, ../sass/style.scss */
 body {
   font-family: "adelle-sans";
 }
 
-/* line 15, ../sass/style.scss */
-.navbar {
-  background-color: #fff;
-}
-
-/* line 18, ../sass/style.scss */
+/* line 34, ../sass/style.scss */
 .slide {
   display: block;
   width: 900px;
@@ -22,7 +17,7 @@ body {
   line-height: 36px;
   letter-spacing: -1px;
 }
-/* line 35, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 .slide p {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -31,12 +26,12 @@ body {
   display: block;
   font-size: 30px;
 }
-/* line 42, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 .slide p strong {
   white-space: nowrap;
 }
 
-/* line 47, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 .comic-panel {
   height: 900px;
   text-transform: uppercase;
@@ -49,12 +44,12 @@ body {
   margin-right: 10px;
 }
 
-/* line 59, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 .page {
   max-width: 1024px;
 }
 
-/* line 64, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 .impress-enabled .step {
   margin: 0;
   opacity: 0.3;
@@ -64,42 +59,42 @@ body {
   -o-transition: opacity 1s;
   transition: opacity 1s;
 }
-/* line 73, ../sass/style.scss */
+/* line 89, ../sass/style.scss */
 .impress-enabled .step.active {
   opacity: 1;
 }
 
-/* line 79, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 .panel1 {
   background-image: url("../images/panel1.jpg");
 }
 
-/* line 83, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 .panel2 {
   background-image: url("../images/panel2.jpg");
 }
 
-/* line 87, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 .panel3 {
   background-image: url("../images/panel3.jpg");
 }
 
-/* line 91, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 .panel4 {
   background-image: url("../images/panel4.jpg");
 }
 
-/* line 95, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 .panel5 {
   background-image: url("../images/panel5.jpg");
 }
 
-/* line 99, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 .panel6 {
   background-image: url("../images/panel6.jpg");
 }
 
-/* line 103, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 .fallback-message {
   font-family: sans-serif;
   line-height: 1.3;
@@ -110,17 +105,17 @@ body {
   border-radius: 10px;
   background: #EEDC94;
 }
-/* line 114, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 .fallback-message p {
   margin-bottom: 10px;
 }
 
-/* line 119, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 .impress-supported .fallback-message {
   display: none;
 }
 
-/* line 123, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 .spacebar {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -136,8 +131,56 @@ body {
   border: 1px solid #000;
 }
 
-/* line 134, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 .tagline {
   font-family: "bree-serif";
   font-size: 100px;
+}
+
+/* line 156, ../sass/style.scss */
+.recommendation-container {
+  width: 100%;
+  height: 450px;
+  -webkit-box-shadow: black 0px 0px 15px;
+  -moz-box-shadow: black 0px 0px 15px;
+  box-shadow: black 0px 0px 15px;
+}
+/* line 159, ../sass/style.scss */
+.recommendation-container .action {
+  line-height: 1;
+  float: left;
+  min-width: 50px;
+  height: auto;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: 0px 0px 15px 15px rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 15px 15px rgba(255, 255, 255, 0.5);
+}
+/* line 161, ../sass/style.scss */
+.recommendation-container .action h4, .recommendation-container .action p {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 177, ../sass/style.scss */
+.navbar-inverse .navbar-brand {
+  color: #ffd800;
+}
+/* line 182, ../sass/style.scss */
+.navbar-inverse .navbar-nav > li > a {
+  color: #999999;
+}
+/* line 186, ../sass/style.scss */
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+  color: #ffd800;
+  background-color: transparent;
+}
+/* line 194, ../sass/style.scss */
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  color: #ffd800;
+  background-color: black;
+}
+/* line 202, ../sass/style.scss */
+.navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse .navbar-nav > .disabled > a:focus {
+  color: #444444;
+  background-color: transparent;
 }

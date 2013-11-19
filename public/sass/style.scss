@@ -8,13 +8,29 @@ $cream: #FAE8CD;
 $blue: #128085;
 $dark: #385052;
 $yellow: #ffd800;
+
+// Grays
+// -------------------------
+
+$gray-darker:            lighten(#000, 13.5%); // #222
+$gray-dark:              lighten(#000, 20%);   // #333
+$gray:                   lighten(#000, 33.5%); // #555
+$gray-light:             lighten(#000, 60%);   // #999
+$gray-lighter:           lighten(#000, 93.5%); // #eee
+
+$main-color: $yellow;
+$navbar-link-color:                 $gray-light;
+$navbar-link-hover-color:           $main-color;
+$navbar-link-hover-bg:              transparent;
+$navbar-link-active-color:          $navbar-link-hover-color;
+$navbar-link-active-bg:             darken(#000, 10%);
+$navbar-link-disabled-color:        #444;
+$navbar-link-disabled-bg:           transparent;
+
 body {
   font-family: "adelle-sans";
 }
 
-.navbar {
-  background-color: #fff;
-}
 .slide {
   display: block;
 
@@ -135,3 +151,59 @@ body {
   font-family: "bree-serif";
   font-size: 100px;
 }
+
+
+.recommendation-container{
+  width: 100%;
+  height: 450px;
+  .action{
+    line-height: 1;
+    h4,p {
+      padding: 0px;
+      margin: 0px;
+    }
+    float: left;
+    min-width: 50px;
+    height: auto;
+    background: rgba(255, 255, 255, 0.7) ;
+    -webkit-box-shadow:  0px 0px 15px 15px rgba(255, 255, 255, 0.7);
+    box-shadow:  0px 0px 15px 15px rgba(255, 255, 255, 0.5);
+  }
+  @include box-shadow(black 0px 0px 15px);
+}
+
+//bootstrap overiddes
+.navbar-inverse{
+  .navbar-brand{
+    color: $main-color;
+  }
+
+  .navbar-nav{
+    > li > a {
+      color: $navbar-link-color;
+
+      &:hover,
+      &:focus {
+        color: $navbar-link-hover-color;
+        background-color: $navbar-link-hover-bg;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-link-active-color;
+        background-color: $navbar-link-active-bg;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-link-disabled-color;
+        background-color: $navbar-link-disabled-bg;
+      }
+    }
+  }
+}
+

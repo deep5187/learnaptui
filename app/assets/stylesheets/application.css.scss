@@ -1,0 +1,363 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ */
+ @import "bootstrap";
+ @import "compass";
+ @import "compass/css3";
+ @import "compass/css3/box-shadow";
+ @import "compass/css3/border-radius";
+ @import "compass/css3/text-shadow";
+
+ @import "bourbon";
+
+
+//colors
+$orange: #C74029;
+$cream: #FAE8CD;
+$blue: #128085;
+$dark: #385052;
+$yellow: #ffd800;
+$green: #A9E472;
+
+// Grays
+// -------------------------
+
+$gray-darker:            lighten(#000, 13.5%); // #222
+$gray-dark:              lighten(#000, 20%);   // #333
+$gray:                   lighten(#000, 33.5%); // #555
+$gray-light:             lighten(#000, 60%);   // #999
+$gray-lighter:           lighten(#000, 93.5%); // #eee
+
+$main-color: $yellow;
+$navbar-link-color:                 $gray-light;
+$navbar-link-hover-color:           $main-color;
+$navbar-link-hover-bg:              transparent;
+$navbar-link-active-color:          $navbar-link-hover-color;
+$navbar-link-active-bg:             darken(#000, 10%);
+$navbar-link-disabled-color:        #444;
+$navbar-link-disabled-bg:           transparent;
+body,p {
+  font-family: "adelle-sans";
+}
+
+.content{
+  margin-top: 50px;
+}
+.slide-impress{
+  display: block;
+
+  width: 900px;
+  height: 700px;
+  padding: 40px 60px;
+
+  background-color: white;
+
+  color: rgb(102, 102, 102);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+
+  font-family: "chaparral-pro", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -1px;
+
+  p {
+    @include box-sizing(content-box);
+    display: block;
+    font-size: 30px;
+  }
+
+  p strong {
+    white-space: nowrap;
+  }
+}
+
+.comic-panel {
+  height: 900px;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0,0,0,.5);
+  color: #fff;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  margin-right: 10px;
+}
+
+.page{
+  max-width: 1024px;
+}
+
+.impress-enabled {
+  .step {
+    margin: 0;
+    opacity: 0.3;
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+  }
+  .step.active {
+    opacity: 1;
+  }
+}
+
+
+.panel1 {
+  background-image: url('../images/panel1.jpg');
+}
+
+.panel2 {
+  background-image: url('../images/panel2.jpg');
+}
+
+.panel3 {
+  background-image: url('../images/panel3.jpg');
+}
+
+.panel4 {
+  background-image: url('../images/panel4.jpg');
+}
+
+.panel5 {
+  background-image: url('../images/panel5.jpg');
+}
+
+.panel6 {
+  background-image: url('../images/panel6.jpg');
+}
+
+.fallback-message {
+  font-family: sans-serif;
+  line-height: 1.3;
+
+  width: 780px;
+  padding: 10px 10px 0;
+  margin: 20px auto;
+
+  border: 1px solid #E4C652;
+  border-radius: 10px;
+  background: #EEDC94;
+  p{
+    margin-bottom: 10px;
+  }
+}
+
+.impress-supported .fallback-message {
+  display: none;
+}
+
+.spacebar{
+  @include border-radius(5px);
+  font-family: "adelle-sans";
+  display: inline-block;
+  padding-top:20px;
+  padding-left:40px;
+  padding-right:40px;
+  padding-bottom:5px;
+  border: 1px solid #000;
+}
+
+.tagline{
+  font-family: "bree-serif";
+  font-size: 100px;
+}
+
+
+.recommendation-container{
+  min-width: 400px;
+  width: 100%;
+  position: relative;
+  .recommendation-title-image{
+    display: block;
+    @include box-shadow(black 0px 0px 15px);
+  }
+  .recommendation-content{
+    position: relative;
+    margin-top: -400px;
+    height: 450px;
+    .action{
+      line-height: 1;
+      h4,p {
+        padding: 0px;
+        margin: 0px;
+      }
+      float: left;
+      min-width: 50px;
+      height: auto;
+      background: rgba(255, 255, 255, 0.7) ;
+      -webkit-box-shadow:  0px 0px 15px 15px rgba(255, 255, 255, 0.7);
+      box-shadow:  0px 0px 15px 15px rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+
+
+//bootstrap overiddes
+.navbar-inverse{
+  .navbar-brand{
+    color: $main-color;
+  }
+
+  .navbar-nav{
+    > li > a {
+      color: $navbar-link-color;
+
+      &:hover,
+      &:focus {
+        color: $navbar-link-hover-color;
+        background-color: $navbar-link-hover-bg;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-link-active-color;
+        background-color: $navbar-link-active-bg;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-link-disabled-color;
+        background-color: $navbar-link-disabled-bg;
+      }
+    }
+  }
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  width: 100%;
+  height: 500px;
+  .carousel-inner{
+    width: 100%;
+    height: 500px;
+  }
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    top: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 10;
+    p.small{
+        font-size: 18px;
+    }
+  }
+  .item {
+    height: 500px;
+    background-color: #777;
+  }
+}
+
+
+
+#recommendation-carousel {
+  .recommendation-content{
+      margin-top: 20px;
+      @include box-shadow(rgba(255, 255, 255, 0.5) 0px 0px 25px 25px);
+      background: rgba(255, 255, 255, 0.5);
+      .action{
+        float: left;
+        min-width: 50px;
+        background: transparent;
+        @include text-shadow(none);
+        display: inline-block;
+        color: black;
+        p{
+          padding: 0px;
+          margin: 0px;
+          line-height: 1;
+          text-align: left ;
+          background: transparent none !important;
+        }
+        h4{
+          padding: 0px;
+          margin: 0px;
+          text-align: left ;
+          background: transparent none !important;
+        }
+      }
+      .tags{
+        float: right;
+        color: black;
+        display: inline-block;
+        font-weight: 100;
+        min-width: 50px;
+        font-size: 14px;
+        background: transparent;
+        @include text-shadow(none);
+        p{
+         text-align: right;
+        }
+      }
+
+      .title{
+        min-width: 50px;
+        margin: 0px auto;
+        background: transparent;
+        padding: 5px;
+        display: inline-block;
+        color: $main-color;
+        h3{
+          line-height: 1;
+          margin: 0;
+          padding: 0;
+        }
+        h1{
+          font-size: 100px;
+          line-height: 1;
+          margin: 0;
+        }
+      }
+
+      .info {
+        min-width: 50px;
+        background: transparent;
+        padding: 5px;
+        margin-top: 60px;
+        display: inline-block;
+        @include text-shadow(none);
+        font-weight: 100;
+        font-size: 12px;
+        color: black;
+      }
+  }
+
+  .btn-start{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    font-weight: 100;
+    font-size: 24px;
+    @include border-top-radius(0px);
+    @include border-bottom-radius(0px);
+    @include border-left-radius(0px);
+    @include border-right-radius(0px);
+    @include box-shadow(rgba(0, 0, 0, 0.5) 10px 10px 15px 15px);
+    @include text-shadow(none);
+    background-color: rgba(169,228,114,0.6);
+    border-color: $green;
+    z-index:11;
+    color: black;
+  }
+}

@@ -27,6 +27,7 @@ $blue: #128085;
 $dark: #385052;
 $yellow: #ffd800;
 $green: #A9E472;
+$main-dark: #2A2E31;
 
 // Grays
 // -------------------------
@@ -42,7 +43,7 @@ $navbar-link-color:                 $gray-light;
 $navbar-link-hover-color:           $main-color;
 $navbar-link-hover-bg:              transparent;
 $navbar-link-active-color:          $navbar-link-hover-color;
-$navbar-link-active-bg:             darken(#000, 10%);
+$navbar-link-active-bg:             $main-dark;
 $navbar-link-disabled-color:        #444;
 $navbar-link-disabled-bg:           transparent;
 body,p {
@@ -205,6 +206,9 @@ body,p {
 
 //bootstrap overiddes
 .navbar-inverse{
+  background-color: black;
+  background-image: url(image_path('patterns/concrete_wall.png'));
+  background-repeat: repeat;
   .navbar-brand{
     color: $main-color;
   }

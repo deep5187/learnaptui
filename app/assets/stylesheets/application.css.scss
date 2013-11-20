@@ -21,12 +21,12 @@
  
 
 //colors
-$orange: #C74029;
-$cream: #FAE8CD;
-$blue: #128085;
+$orange: #fb9b1c;
+$blue: #009aff;
 $dark: #385052;
-$yellow: #ffd800;
-$green: #A9E472;
+$yellow: #fcf85d;
+$dark-yellow:#ffd800;
+$green: #48df00;
 
 
 // Grays
@@ -207,19 +207,17 @@ body,p {
     }
   }
 }
-
-
-
 //bootstrap overiddes
 .navbar-inverse{
-  background-color: black;
   background-image: url(image_path('patterns/concrete_wall.png'));
   background-repeat: repeat;
   border-color: $main-dark;
+  font-family: $title-font2; 
+  opacity:0.9;
   @include box-shadow($main-dark 0px 0px 2px 2px);
-  font-family: $title-font2;
   .navbar-brand{
-    color: $main-color;    
+    color: $main-color; 
+
   }
   .navbar-nav{
     > li > a {

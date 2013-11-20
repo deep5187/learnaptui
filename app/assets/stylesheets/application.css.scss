@@ -18,7 +18,7 @@
  @import "compass/css3/text-shadow";
 
  @import "bourbon";
-
+ 
 
 //colors
 $orange: #C74029;
@@ -27,7 +27,7 @@ $blue: #128085;
 $dark: #385052;
 $yellow: #ffd800;
 $green: #A9E472;
-$main-dark: #2A2E31;
+
 
 // Grays
 // -------------------------
@@ -39,6 +39,8 @@ $gray-light:             lighten(#000, 60%);   // #999
 $gray-lighter:           lighten(#000, 93.5%); // #eee
 
 $main-color: $yellow;
+$main-dark: #2A2E31;
+
 $navbar-link-color:                 $gray-light;
 $navbar-link-hover-color:           $main-color;
 $navbar-link-hover-bg:              transparent;
@@ -46,6 +48,10 @@ $navbar-link-active-color:          $navbar-link-hover-color;
 $navbar-link-active-bg:             $main-dark;
 $navbar-link-disabled-color:        #444;
 $navbar-link-disabled-bg:           transparent;
+
+$title-font1:"ff-prater-block-web";
+$title-font2:"bree-serif";
+
 body,p {
   font-family: "adelle-sans";
 }
@@ -209,10 +215,12 @@ body,p {
   background-color: black;
   background-image: url(image_path('patterns/concrete_wall.png'));
   background-repeat: repeat;
+  border-color: $main-dark;
+  @include box-shadow($main-dark 0px 0px 2px 2px);
+  font-family: $title-font2;
   .navbar-brand{
-    color: $main-color;
+    color: $main-color;    
   }
-
   .navbar-nav{
     > li > a {
       color: $navbar-link-color;
@@ -242,126 +250,4 @@ body,p {
   }
 }
 
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  width: 100%;
-  height: 500px;
-  .carousel-inner{
-    width: 100%;
-    height: 500px;
-  }
-  .carousel-caption {
-    position: absolute;
-    right: 15%;
-    top: 20px;
-    left: 15%;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    z-index: 10;
-    p.small{
-        font-size: 18px;
-    }
-  }
-  .item {
-    height: 500px;
-    background-color: #777;
-  }
-}
-
-
-
-#recommendation-carousel {
-  .recommendation-content{
-      margin-top: 20px;
-      @include box-shadow(rgba(255, 255, 255, 0.5) 0px 0px 25px 25px);
-      background: rgba(255, 255, 255, 0.5);
-      .action{
-        float: left;
-        min-width: 50px;
-        background: transparent;
-        @include text-shadow(none);
-        display: inline-block;
-        color: black;
-        p{
-          padding: 0px;
-          margin: 0px;
-          line-height: 1;
-          text-align: left ;
-          background: transparent none !important;
-        }
-        h4{
-          padding: 0px;
-          margin: 0px;
-          text-align: left ;
-          background: transparent none !important;
-        }
-      }
-      .tags{
-        float: right;
-        color: black;
-        display: inline-block;
-        font-weight: 100;
-        min-width: 50px;
-        font-size: 14px;
-        background: transparent;
-        @include text-shadow(none);
-        p{
-         text-align: right;
-        }
-      }
-
-      .title{
-        min-width: 50px;
-        margin: 0px auto;
-        background: transparent;
-        padding: 5px;
-        display: inline-block;
-        color: $main-color;
-        h3{
-          line-height: 1;
-          margin: 0;
-          padding: 0;
-        }
-        h1{
-          font-size: 100px;
-          line-height: 1;
-          margin: 0;
-        }
-      }
-
-      .info {
-        min-width: 50px;
-        background: transparent;
-        padding: 5px;
-        margin-top: 60px;
-        display: inline-block;
-        @include text-shadow(none);
-        font-weight: 100;
-        font-size: 12px;
-        color: black;
-      }
-  }
-
-  .btn-start{
-    width: 100%;
-    height: 60px;
-    position: absolute;
-    bottom: 0;
-    font-weight: 100;
-    font-size: 24px;
-    @include border-top-radius(0px);
-    @include border-bottom-radius(0px);
-    @include border-left-radius(0px);
-    @include border-right-radius(0px);
-    @include box-shadow(rgba(0, 0, 0, 0.5) 10px 10px 15px 15px);
-    @include text-shadow(none);
-    background-color: rgba(169,228,114,0.6);
-    border-color: $green;
-    z-index:11;
-    color: black;
-  }
-}
+@import "home";

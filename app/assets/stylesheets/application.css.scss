@@ -213,7 +213,6 @@ body,p {
   background-repeat: repeat;
   border-color: $main-dark;
   font-family: $title-font2; 
-  opacity:0.9;
   @include box-shadow($main-dark 0px 0px 2px 2px);
   .navbar-brand{
     color: $main-color; 
